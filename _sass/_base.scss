@@ -28,6 +28,16 @@ body {
 	background-color: $off-white;
 }
 
+.site-wrapper {
+	width: 100%;
+	height: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	background: $white;
+	border-right: 1px solid $light-grey;
+	border-left: 1px solid $light-grey;
+}
+
 h1, h2, h3 {
 	line-height: 1.2em;
 	font-weight: normal;

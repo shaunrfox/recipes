@@ -636,6 +636,15 @@ body {
     display: table;
     clear: both; }
 
+.site-wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc; }
+
 h1, h2, h3 {
   line-height: 1.2em;
   font-weight: normal;
@@ -697,3 +706,28 @@ hr {
 
 ::selection {
   background: #bfe3f2; }
+
+/*
+ * * * * * * * * * * * * * * * * * * *
+ * HEADER
+ * * * * * * * * * * * * * * * * * * *
+ */
+.site-header {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px; }
+
+.filter {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 0 10px;
+  font-size: 20px;
+  font-size: 2rem; }
+  .filter:focus {
+    outline: none;
+    border-color: #00ccff;
+    background: #f2fcff; }
