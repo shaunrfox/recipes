@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Chili"
+date:   2016-06-06
+tags:
+ - chili
+ - beef
+ - stovetop
+---

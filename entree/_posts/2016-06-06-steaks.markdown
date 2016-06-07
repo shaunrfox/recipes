@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Steaks"
+date:   2016-06-06
+tags:
+ - beef
+ - grilled
+---

@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Shrimp"
+date:   2016-06-06
+tags:
+ - seafood
+---

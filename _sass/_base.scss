@@ -17,6 +17,7 @@ html {
 	width: 100%;
 	height: 100%;
 	display: block;
+	background-color: $off-white;
 }
 
 body {
@@ -24,18 +25,18 @@ body {
 	@include font-size(1.6);
 	padding: 0px;
 	width: 100%;
-	height: 100%;
-	background-color: $off-white;
-}
-
-.site-wrapper {
-	width: 100%;
-	height: 100%;
+	height: auto;
 	max-width: 800px;
+	overflow: auto;
 	margin: 0 auto;
 	background: $white;
 	border-right: 1px solid $light-grey;
 	border-left: 1px solid $light-grey;
+}
+
+.site-wrapper {
+	width: 100%;
+	height: auto;
 }
 
 h1, h2, h3 {
@@ -51,7 +52,7 @@ h1 {
 }
 
 h2 {
-	@include font-size(3);
+	@include font-size(2);
 	color: $off-black;
 	font-weight: 700;
 }

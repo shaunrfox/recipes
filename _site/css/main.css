@@ -622,15 +622,21 @@ html {
   color: #111;
   width: 100%;
   height: 100%;
-  display: block; }
+  display: block;
+  background-color: #eee; }
 
 body {
   font-size: 16px;
   font-size: 1.6rem;
   padding: 0px;
   width: 100%;
-  height: 100%;
-  background-color: #eee; }
+  height: auto;
+  max-width: 800px;
+  overflow: auto;
+  margin: 0 auto;
+  background: #fff;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc; }
   body::after {
     content: '';
     display: table;
@@ -638,12 +644,7 @@ body {
 
 .site-wrapper {
   width: 100%;
-  height: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  background: #fff;
-  border-right: 1px solid #ccc;
-  border-left: 1px solid #ccc; }
+  height: auto; }
 
 h1, h2, h3 {
   line-height: 1.2em;
@@ -657,8 +658,8 @@ h1 {
   font-weight: 700; }
 
 h2 {
-  font-size: 30px;
-  font-size: 3rem;
+  font-size: 20px;
+  font-size: 2rem;
   color: #111;
   font-weight: 700; }
 
@@ -731,3 +732,41 @@ hr {
     outline: none;
     border-color: #00ccff;
     background: #f2fcff; }
+
+/*
+ * * * * * * * * * * * * * * * * * * *
+ * RECIPE LIST
+ * * * * * * * * * * * * * * * * * * *
+ */
+section.food-type {
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  margin-bottom: -1px; }
+
+.recipe-title {
+  font-size: 30px;
+  font-size: 3rem;
+  color: #0090cb; }
+
+.meta {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 5px; }
+  .meta .tag {
+    float: left;
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #aaa;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 10px;
+    margin-right: 5px; }
+    .meta .tag:after {
+      content: ', '; }
+    .meta .tag:last-child:after {
+      display: none; }
