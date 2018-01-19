@@ -7,24 +7,57 @@
 $header-height: 50px;
 
 .site-header {
+	display: grid;
+	grid-template-columns: 300px auto;
 	width: 100%;
 	height: $header-height;
-	margin-bottom: 20px;
 }
 
-.filter {
-	display: block;
-	width: 100%;
+.logo,
+.search {
 	height: $header-height;
-	background: $white;
-	border: none;
-	border-bottom: 1px solid $light-grey;
-	padding: 0 10px;
-	@include font-size(2);
+	font-size: 22px;
+}
 
-	&:focus {
-		outline: none;
-		border-color: $cyan;
-		background: tint($cyan, 5);
+.logo {
+	padding: 0;
+	line-height: $header-height;
+	color: $white;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background: $off-black;
+
+	span {
+		@include rooney();
+		font-style: italic;
+		color: $blue;
+		text-transform: none;
+		letter-spacing: 0;
+	}
+
+	&:hover {
+		cursor: pointer;
+		color: $white;
+		background: tint($off-black, 90);
+	}
+}
+
+.search {
+	background: $light-grey;
+
+	input {
+		width: 100%;
+		height: $header-height;
+		padding: 0 20px;
+		border: none;
+		border-top: 2px solid $white;
+		border-bottom: 2px solid $white;
+		background: $white;
+
+		&:focus {
+			outline: none;
+			border-bottom-color: $blue;
+		}
 	}
 }

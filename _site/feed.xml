@@ -4,19 +4,19 @@
     <title>Recipes</title>
     <description>Our favorite recipes
 </description>
-    <link>/recipes/</link>
-    <atom:link href="/recipes/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Jun 2016 20:50:54 -0500</pubDate>
-    <lastBuildDate>Mon, 06 Jun 2016 20:50:54 -0500</lastBuildDate>
-    <generator>Jekyll v3.1.2</generator>
+    <link>http://localhost:4000/recipes/</link>
+    <atom:link href="http://localhost:4000/recipes/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 18 Jan 2018 23:01:02 -0600</pubDate>
+    <lastBuildDate>Thu, 18 Jan 2018 23:01:02 -0600</lastBuildDate>
+    <generator>Jekyll v3.6.0</generator>
     
       <item>
         <title>Chili</title>
         <description>
 </description>
         <pubDate>Mon, 06 Jun 2016 00:00:00 -0500</pubDate>
-        <link>/recipes/soup/2016/06/06/chili.html</link>
-        <guid isPermaLink="true">/recipes/soup/2016/06/06/chili.html</guid>
+        <link>http://localhost:4000/recipes/soups/chili.html</link>
+        <guid isPermaLink="true">http://localhost:4000/recipes/soups/chili.html</guid>
         
         <category>chili</category>
         
@@ -25,7 +25,7 @@
         <category>stovetop</category>
         
         
-        <category>soup</category>
+        <category>soups</category>
         
       </item>
     
@@ -34,30 +34,15 @@
         <description>
 </description>
         <pubDate>Mon, 06 Jun 2016 00:00:00 -0500</pubDate>
-        <link>/recipes/side/2016/06/06/roasted-brussels-sprouts.html</link>
-        <guid isPermaLink="true">/recipes/side/2016/06/06/roasted-brussels-sprouts.html</guid>
+        <link>http://localhost:4000/recipes/sides/roasted-brussels-sprouts.html</link>
+        <guid isPermaLink="true">http://localhost:4000/recipes/sides/roasted-brussels-sprouts.html</guid>
         
         <category>vegetable</category>
         
         <category>broiled</category>
         
         
-        <category>side</category>
-        
-      </item>
-    
-      <item>
-        <title>Caesar Salad</title>
-        <description>
-</description>
-        <pubDate>Mon, 06 Jun 2016 00:00:00 -0500</pubDate>
-        <link>/recipes/salad/2016/06/06/caesar-salad.html</link>
-        <guid isPermaLink="true">/recipes/salad/2016/06/06/caesar-salad.html</guid>
-        
-        <category>caesar</category>
-        
-        
-        <category>salad</category>
+        <category>sides</category>
         
       </item>
     
@@ -66,15 +51,15 @@
         <description>
 </description>
         <pubDate>Mon, 06 Jun 2016 00:00:00 -0500</pubDate>
-        <link>/recipes/entree/2016/06/06/steaks.html</link>
-        <guid isPermaLink="true">/recipes/entree/2016/06/06/steaks.html</guid>
+        <link>http://localhost:4000/recipes/entrees/steaks.html</link>
+        <guid isPermaLink="true">http://localhost:4000/recipes/entrees/steaks.html</guid>
         
         <category>beef</category>
         
         <category>grilled</category>
         
         
-        <category>entree</category>
+        <category>entrees</category>
         
       </item>
     
@@ -83,13 +68,13 @@
         <description>
 </description>
         <pubDate>Mon, 06 Jun 2016 00:00:00 -0500</pubDate>
-        <link>/recipes/entree/2016/06/06/shrimp.html</link>
-        <guid isPermaLink="true">/recipes/entree/2016/06/06/shrimp.html</guid>
+        <link>http://localhost:4000/recipes/entrees/shrimp.html</link>
+        <guid isPermaLink="true">http://localhost:4000/recipes/entrees/shrimp.html</guid>
         
         <category>seafood</category>
         
         
-        <category>entree</category>
+        <category>entrees</category>
         
       </item>
     
@@ -98,15 +83,15 @@
         <description>
 </description>
         <pubDate>Mon, 06 Jun 2016 00:00:00 -0500</pubDate>
-        <link>/recipes/entree/2016/06/06/pot-roast.html</link>
-        <guid isPermaLink="true">/recipes/entree/2016/06/06/pot-roast.html</guid>
+        <link>http://localhost:4000/recipes/entrees/pot-roast.html</link>
+        <guid isPermaLink="true">http://localhost:4000/recipes/entrees/pot-roast.html</guid>
         
         <category>beef</category>
         
         <category>slow-cooked</category>
         
         
-        <category>entree</category>
+        <category>entrees</category>
         
       </item>
     
@@ -115,13 +100,13 @@
         <description>
 </description>
         <pubDate>Mon, 06 Jun 2016 00:00:00 -0500</pubDate>
-        <link>/recipes/entree/2016/06/06/pork-tenderloin.html</link>
-        <guid isPermaLink="true">/recipes/entree/2016/06/06/pork-tenderloin.html</guid>
+        <link>http://localhost:4000/recipes/entrees/pork-tenderloin.html</link>
+        <guid isPermaLink="true">http://localhost:4000/recipes/entrees/pork-tenderloin.html</guid>
         
         <category>pork</category>
         
         
-        <category>entree</category>
+        <category>entrees</category>
         
       </item>
     
@@ -130,13 +115,13 @@
         <description>
 </description>
         <pubDate>Mon, 06 Jun 2016 00:00:00 -0500</pubDate>
-        <link>/recipes/entree/2016/06/06/pork-chops.html</link>
-        <guid isPermaLink="true">/recipes/entree/2016/06/06/pork-chops.html</guid>
+        <link>http://localhost:4000/recipes/entrees/pork-chops.html</link>
+        <guid isPermaLink="true">http://localhost:4000/recipes/entrees/pork-chops.html</guid>
         
         <category>pork</category>
         
         
-        <category>entree</category>
+        <category>entrees</category>
         
       </item>
     
@@ -145,8 +130,8 @@
         <description>
 </description>
         <pubDate>Mon, 06 Jun 2016 00:00:00 -0500</pubDate>
-        <link>/recipes/entree/2016/06/06/paleo-chicken-nuggets.html</link>
-        <guid isPermaLink="true">/recipes/entree/2016/06/06/paleo-chicken-nuggets.html</guid>
+        <link>http://localhost:4000/recipes/entrees/paleo-chicken-nuggets.html</link>
+        <guid isPermaLink="true">http://localhost:4000/recipes/entrees/paleo-chicken-nuggets.html</guid>
         
         <category>chicken</category>
         
@@ -155,7 +140,7 @@
         <category>fried</category>
         
         
-        <category>entree</category>
+        <category>entrees</category>
         
       </item>
     
@@ -164,15 +149,34 @@
         <description>
 </description>
         <pubDate>Mon, 06 Jun 2016 00:00:00 -0500</pubDate>
-        <link>/recipes/entree/2016/06/06/meatloaf.html</link>
-        <guid isPermaLink="true">/recipes/entree/2016/06/06/meatloaf.html</guid>
+        <link>http://localhost:4000/recipes/entrees/meatloaf.html</link>
+        <guid isPermaLink="true">http://localhost:4000/recipes/entrees/meatloaf.html</guid>
         
         <category>beef</category>
         
         <category>baked</category>
         
         
-        <category>entree</category>
+        <category>entrees</category>
+        
+      </item>
+    
+      <item>
+        <title>Liver and Bacon</title>
+        <description>
+</description>
+        <pubDate>Mon, 06 Jun 2016 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/recipes/entrees/liver-and-bacon.html</link>
+        <guid isPermaLink="true">http://localhost:4000/recipes/entrees/liver-and-bacon.html</guid>
+        
+        <category>beef</category>
+        
+        <category>liver</category>
+        
+        <category>bacon</category>
+        
+        
+        <category>entrees</category>
         
       </item>
     

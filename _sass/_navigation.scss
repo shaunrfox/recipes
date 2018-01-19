@@ -1,0 +1,51 @@
+/*
+ * * * * * * * * * * * * * * * * * * *
+ * NAVIGATION
+ * * * * * * * * * * * * * * * * * * *
+ */
+
+.navigation {
+	width: 100%;
+	height: 40px;
+	background: $tan;
+	border-bottom: 1px solid $orange;
+	padding: 0 30px;
+	line-height: 40px;
+
+	> a {
+		position: relative;
+		display: block;
+		float: left;
+		color: tint($off-black, 50);
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		transition: ease all 300ms;
+		margin-right: 20px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			width: 0;
+			height: 0;
+			background: $orange;
+			border-top-left-radius: 6px;
+			border-top-right-radius: 6px;
+			transition: ease all 300ms;
+		}
+
+		&:hover,
+		&.active {
+			color: $off-black;
+
+			&:before {
+				width: 12px;
+				height: 6px;
+			}
+		}
+	}
+}
