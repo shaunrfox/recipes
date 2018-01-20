@@ -1,0 +1,19 @@
+{% assign current = page.url | downcase | split: '/' %}
+
+<!-- Header & Search -->
+<div class="site-header">
+	<a href="{{ "/" | prepend:site.baseurl }}" class="logo">Gluten Free <span>Archive</span></a>
+	<div class="search">
+		<input type="text" class="filter" id="filter" placeholder="Type to search recipes...">
+	</div>
+</div>
+
+<!-- Navigation -->
+<div class="navigation">
+	<a href="{{ "/" | prepend:site.baseurl }}" {% if (current[1] == undefined) %} class="active" {% endif %}>Home</a>
+	<a href="{{ "/appetizers/" | prepend:site.baseurl }}" {% if (current[1] == 'appetizers') %} class="active" {% endif %}>Appetizers</a>
+	<a href="{{ "/entrees/" | prepend:site.baseurl }}" {% if (current[1] == 'entrees') %} class="active" {% endif %}>Entrees</a>
+	<a href="{{ "/soups/" | prepend:site.baseurl }}" {% if (current[1] == 'soups') %} class="active" {% endif %}>Soups</a>
+	<a href="{{ "/sides/" | prepend:site.baseurl }}" {% if (current[1] == 'sides') %} class="active" {% endif %}>Sides</a>
+	<a href="{{ "/desserts/" | prepend:site.baseurl }}" {% if (current[1] == 'desserts') %} class="active" {% endif %}>Desserts</a>
+</div>

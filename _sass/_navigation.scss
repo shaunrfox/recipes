@@ -20,7 +20,7 @@
 		font-size: 14px;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-		transition: ease all 300ms;
+		transition: ease color 300ms;
 		margin-right: 20px;
 
 		&:before {
@@ -35,7 +35,7 @@
 			background: $orange;
 			border-top-left-radius: 6px;
 			border-top-right-radius: 6px;
-			transition: ease all 300ms;
+			transition: ease width 300ms, ease height 300ms;
 		}
 
 		&:hover,
