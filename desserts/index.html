@@ -4,5 +4,14 @@ body-class: desserts
 ---
 
 <div class="container">
-	<div class="column">Desserts page</div>
+	<div class="column">
+		<h1>Desserts page</h1>
+		<ul>
+		{% for post in site.categories.desserts %}
+			<li>
+				<a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+	</div>
 </div>

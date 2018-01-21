@@ -9,12 +9,20 @@
   <title>Pot Roast</title>
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/recipes/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/recipes/entrees/pot-roast.html">
-  <link rel="alternate" type="application/rss+xml" title="Recipes" href="http://localhost:4000/recipes/feed.xml">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/entrees/pot-roast.html">
+  <link rel="alternate" type="application/rss+xml" title="Recipes" href="http://localhost:4000/feed.xml">
+
+  <link rel="icon" href="http://localhost:4000" type="image/x-icon" />
+  <link rel="shortcut icon" href="http://localhost:4000" type="image/x-icon" />
 
   <!-- Typekit -->
   <link rel="stylesheet" href="https://use.typekit.net/qhf8wvl.css">
+
+  <!-- JS -->
+  <script type="text/javascript" src=http://localhost:4000/assets/js/jquery-2.0.3.min.js></script>
+  <script type="text/javascript" src=http://localhost:4000/assets/js/lunr.min.js></script>
+  <script type="text/javascript" src=http://localhost:4000/assets/js/search.js></script>
 </head>
 
 
@@ -25,20 +33,21 @@
 
 <!-- Header & Search -->
 <div class="site-header">
-	<a href="/recipes/" class="logo">Gluten Free <span>Archive</span></a>
-	<div class="search">
-		<input type="text" class="filter" id="filter" placeholder="Type to search recipes...">
+	<a href="/" class="logo">Gluten Free <span>Archive</span></a>
+	<div class="global-search">
+		<input type="text" class="search" id="search-term" placeholder="Type to search recipes...">
+		<div id="search-results" class="search-results"></div>
 	</div>
 </div>
 
 <!-- Navigation -->
 <div class="navigation">
-	<a href="/recipes/" >Home</a>
-	<a href="/recipes/appetizers/" >Appetizers</a>
-	<a href="/recipes/entrees/"  class="active" >Entrees</a>
-	<a href="/recipes/soups/" >Soups</a>
-	<a href="/recipes/sides/" >Sides</a>
-	<a href="/recipes/desserts/" >Desserts</a>
+	<a href="/" >Home</a>
+	<a href="/appetizers/" >Appetizers</a>
+	<a href="/entrees/"  class="active" >Entrees</a>
+	<a href="/soups/" >Soups</a>
+	<a href="/sides/" >Sides</a>
+	<a href="/desserts/" >Desserts</a>
 </div>
 
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting">

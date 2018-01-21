@@ -9,15 +9,11 @@ body-class: home
 	</div>
 
 	<div class="newest-dishes">
-		<div class="column">
-			<div class="new-dish">New Dish</div>
-		</div>
-		<div class="column">
-			<div class="new-dish">New Dish</div>
-		</div>
-		<div class="column">
-			<div class="new-dish">New Dish</div>
-		</div>
+		{% for post in site.posts limit:3 %}
+			<div class="column">
+				<a href="{{ post.url | prepend:site.baseurl }}" class="new-dish">{{ post.title }}</a>
+			</div>
+		{% endfor %}
 	</div>
 
 	<div class="column quick-meal-plan-wrapper">

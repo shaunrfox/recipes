@@ -3,8 +3,9 @@
 <!-- Header & Search -->
 <div class="site-header">
 	<a href="{{ "/" | prepend:site.baseurl }}" class="logo">Gluten Free <span>Archive</span></a>
-	<div class="search">
-		<input type="text" class="filter" id="filter" placeholder="Type to search recipes...">
+	<div class="global-search">
+		<input type="text" class="search" id="search-term" placeholder="Type to search recipes...">
+		<div id="search-results" class="search-results"></div>
 	</div>
 </div>
 

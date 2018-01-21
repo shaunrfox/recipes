@@ -4,5 +4,14 @@ body-class: sides
 ---
 
 <div class="container">
-	<div class="column">Sides page</div>
+	<div class="column">
+		<h1>Sides page</h1>
+		<ul>
+		{% for post in site.categories.sides %}
+			<li>
+				<a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+	</div>
 </div>
