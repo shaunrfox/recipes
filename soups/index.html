@@ -1,0 +1,17 @@
+---
+layout: default
+body-class: soups
+---
+
+<div class="container">
+	<div class="column">
+		<h1>Soups page</h1>
+		<ul>
+		{% for post in site.categories.soups %}
+			<li>
+				<a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+	</div>
+</div>

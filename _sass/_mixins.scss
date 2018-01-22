@@ -11,6 +11,10 @@
 	font-family: "Source Sans Pro", Verdana, Helvetica, Arial, sans-serif;
 }
 
+@mixin rooney() {
+	font-family: "rooney-web", Georgia, Cambria, serif;
+}
+
 // Helper to clear inner floats
 @mixin clearfix {
   &::after {

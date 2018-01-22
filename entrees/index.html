@@ -1,0 +1,17 @@
+---
+layout: default
+body-class: entrees
+---
+
+<div class="container">
+	<div class="column">
+		<h1>Entrees page</h1>
+		<ul>
+		{% for post in site.categories.entrees %}
+			<li>
+				<a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+	</div>
+</div>

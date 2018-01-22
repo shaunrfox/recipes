@@ -20,9 +20,11 @@
 @import
 	"base",
 	"header",
-	"recipe-list"
+	"navigation",
+	"post"
 ;
 
 // Specific Page Styling
-// @import
-// ;
+@import
+	"home"
+;

@@ -1,77 +1,26 @@
 ---
 layout: default
+body-class: home
 ---
 
-<div class="home">
-
-	<div class="container">
-		<div class="column recipe-list">
-			<h1 class="page-heading">Posts</h1>
-
-			<section class="food-type">
-				<h2>Entrees</h2>
-
-				{% assign entree-posts = (site.categories.entree | sort: 'title') %}
-				{% for post in entree-posts %}
-					<div class="recipe">
-						<h3 class="recipe-title">{{ post.title }}</h3>
-						<!-- <div class="meta">
-							{% for tag in post.tags %}
-								<div class="tag">{{ tag }}</div>
-							{% endfor %}
-						</div> -->
-					</div>
-				{% endfor %}
-			</section>
-
-			<section class="food-type">
-				<h2>Sides</h2>
-
-				{% assign side-posts = (site.categories.side | sort: 'title') %}
-				{% for post in side-posts %}
-					<div class="recipe">
-						<h3 class="recipe-title">{{ post.title }}</h3>
-						<!-- <div class="meta">
-							{% for tag in post.tags %}
-								<div class="tag">{{ tag }}</div>
-							{% endfor %}
-						</div> -->
-					</div>
-				{% endfor %}
-			</section>
-
-			<section class="food-type">
-				<h2>Soups</h2>
-
-				{% assign soup-posts = (site.categories.soup | sort: 'title') %}
-				{% for post in soup-posts %}
-					<div class="recipe">
-						<h3 class="recipe-title">{{ post.title }}</h3>
-						<!-- <div class="meta">
-							{% for tag in post.tags %}
-								<div class="tag">{{ tag }}</div>
-							{% endfor %}
-						</div> -->
-					</div>
-				{% endfor %}
-			</section>
-
-			<section class="food-type">
-				<h2>Salads</h2>
-
-				{% assign salad-posts = (site.categories.salad | sort: 'title') %}
-				{% for post in salad-posts %}
-					<div class="recipe">
-						<h3 class="recipe-title">{{ post.title }}</h3>
-						<!-- <div class="meta">
-							{% for tag in post.tags %}
-								<div class="tag">{{ tag }}</div>
-							{% endfor %}
-						</div> -->
-					</div>
-				{% endfor %}
-			</section>
-		</div>
+<div class="container home-contents">
+	<div class="column featured-slider-wrapper">
+		<div class="featured-slider">Featured Slider</div>
 	</div>
 
+	<div class="newest-dishes">
+		{% for post in site.posts limit:3 %}
+			<div class="column">
+				<a href="{{ post.url | prepend:site.baseurl }}" class="new-dish">{{ post.title }}</a>
+			</div>
+		{% endfor %}
+	</div>
+
+	<div class="column quick-meal-plan-wrapper">
+		<div class="quick-meal-plan">Quick Meal Plan</div>
+	</div>
+
+	<div class="column try-this-wrapper">
+		<div class="try-this">Try This!</div>
+	</div>
 </div>

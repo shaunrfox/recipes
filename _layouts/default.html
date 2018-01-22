@@ -3,19 +3,15 @@
 
   {% include head.html %}
 
-  <body>
+  <body{% if page.body-class %} class="{{ page.body-class }}"{% endif %}>
 
-    <div class="site-wrapper">
+    <!-- <div class="site-wrapper"> -->
       {% include header.html %}
 
-      <div class="page-content">
-        <div class="wrapper">
-          {{ content }}
-        </div>
-      </div>
+      {{ content }}
 
       {% include footer.html %}
-    </div>
+    <!-- </div> -->
 
   </body>
 
